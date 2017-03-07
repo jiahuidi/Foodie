@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie - Suggest</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Foodie">
+        </div>
+        <ul  class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="suggest.html">Suggest</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h2>Suggest</h2>
+        <form action="success.html" method="post">
+            <table class="suggest">
+                <tr>
+                    <td class="td-lable">
+                        <lable for="recipe-name">食谱名称</lable>
+                    </td>
+                    <td>
+                        <input type="text" id="recipe-name" name="recipe-name">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-lable">
+                        <lable for="photos">上传成品图</lable>
+                    </td>
+                    <td>
+                        <input type="file" id="photos">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-lable">
+                        <lable>美食类型</lable>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" id="type-a" checked value="1">
+                        <lable for="type-a">原创</lable>
+                        <input type="radio" name="type" id="type-b" value="2">
+                        <lable for="type-b">转载</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-lable">
+                        <lable>人数</lable>
+                    </td>
+                    <td>
+                        <select>
+                            <option>1人</option>
+                            <option selected>2人</option>
+                            <option>3人</option>
+                            <option>多人</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-lable">
+                        <lable for="ingredients">材料</lable>
+                    </td>
+                    <td>
+                        <textarea id="ingredients"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-lable">
+                        <lable for="directions">制作过程</lable>
+                    </td>
+                    <td>
+                        <textarea id="directions"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-lable"></td>
+                    <td>
+                        <input type="checkbox" id="newsletter" checked>
+                        <lable for="newsletter">订阅新闻邮件？</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td-btn">
+                        <input type="submit" value="发布">
+                        <input type="reset" value="重新填写"></td>
+                </tr>
+            </table>
+        </form>
+        <p></p>
+    </div>
+</body>
+</html>

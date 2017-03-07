@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie - Suggest</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <img src="images/logo.jpg" alt="Foodie">
+    </div>
+    <ul  class="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="suggest.html">Suggest</a></li>
+    </ul>
+</div>
+<div class="main-content">
+    <h2>post</h2>
+    <form action="success.html" method="post">
+        <lable for="recipe-name">食谱名称</lable>
+        <input type="text" id="recipe-name"><br>
+        <lable for="photos">上传成品图</lable>
+        <input type="file" id="photos"><br>
+        <lable>美食类型</lable>
+        <input type="radio" name="type" id="type-a" checked value="1">
+        <lable for="type-a">原创</lable>
+        <input type="radio" name="type" id="type-b" value="2">
+        <lable for="type-b">转载</lable>
+        <br>
+        <lable>人数</lable>
+        <select>
+            <option>1人</option>
+            <option selected>2人</option>
+            <option>3人</option>
+            <option>多人</option>
+        </select><br>
+        <lable for="ingredients">材料</lable>
+        <textarea id="ingredients"></textarea><br>
+        <lable for="directions">制作过程</lable>
+        <textarea id="directions"></textarea><br>
+        <input type="checkbox" id="newsletter" checked>
+        <lable for="newsletter">订阅新闻邮件？</lable><br>
+        <input type="submit" value="发布">
+        <input type="reset" value="重新填写">
+    </form>
+    <p></p>
+</div>
+</body>
+</html>

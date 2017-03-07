@@ -1,0 +1,196 @@
+/*页面初始化*/
+html, body, h1, h2, h3, p, ol, ul, li, a{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+/*通用样式*/
+a {
+    text-decoration: none;
+}
+/*伪类选择器*/
+/*未访问的链接，和a{}相同并且同时存在时会覆盖a{}*/
+a:link{
+    color: darkblue;
+}
+
+/*鼠标移动到超链接时*/
+a:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+
+/*被选定的超链接*/
+a:active{
+    text-decoration: underline;
+    color: yellow;
+}
+
+/*已访问的超链接*/
+a:visited{
+    color: lightblue;
+}
+
+h1{
+    color: #FFFFFF;
+    margin: 10px 0 15px 0;
+    text-align: center;
+}
+
+h2{
+    color: #79B1A3;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+h3{
+    color: #79B1A3;
+    margin: 15px 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 3px;
+}
+
+ul, ol {
+    padding: 0 0 0 50px;
+}
+
+textarea {
+    resize: none;
+}
+
+/*网页布局*/
+.header {
+    padding: 10px;
+    background-color: #B56663;
+}
+
+.main-content {
+    width: 800px;
+    padding: 20px;
+    border: 1px solid #DDDDDD;
+    margin: 30px auto 0 auto;
+}
+
+/*logo*/
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 240px;
+    height: 100px;
+}
+
+/*页面导航条*/
+.nav {
+    padding-left: 0;
+    text-align: center;
+}
+
+/*块标签转换成内联标签*/
+.nav li{
+    display: inline; /*水平显示*/
+}
+
+.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 0 26px;/*内容自由伸缩*/
+}
+
+.nav a:hover {
+    background-color: #A0000F;
+}
+
+/*菜单*/
+.recipes {
+    list-style-type: none; /*去掉圆点*/
+    padding: 0;
+}
+
+.recipes li{
+    border: 1px solid #B56663;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.recipes h3 {
+    border-bottom: 0;
+}
+
+.recipes h3 a {
+    color: #79B1A3;
+}
+
+.food {
+    text-align: center;
+}
+
+.food img {
+    width: 240px;
+    height: 100px;
+}
+
+/*页脚*/
+.footer{
+    padding: 10px 0 30px 0;
+}
+
+.footer p {
+    color: #AAAAAA;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*发布美食*/
+.suggest {
+    width: 100%;
+}
+
+.suggest td {
+    padding: 5px;
+}
+
+.suggest .td-lable {
+    width: 100px;
+    text-align: right;
+}
+
+.suggest .td-btn {
+    text-align: center;
+}
+
+.suggest input[type=text] {
+    width: 500px;
+    padding: 7px;
+    border: 2px solid #79B1A3;
+}
+
+.suggest textarea {
+    width: 500px;
+    padding: 7px;
+    border: 2px solid #79B1A3;
+}
+/*id选择器*/
+#ingredients {
+    height: 100px;
+}
+
+#directions {
+    height: 300px;
+}
+
+/*
+.suggest input[type=submit], .suggest input[type=reset] {
+
+}*/
+.suggest .td-btn input {
+    width: 120px;
+    font-size: 16px;
+}
